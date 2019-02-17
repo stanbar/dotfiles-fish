@@ -1,10 +1,6 @@
-set -x GIT_EMAIL "stasbar@stasbar.com"
+set -x GIT_EMAIL "stachu@stasbar.com"
 set -x GIT_NAME "Stanislaw Baranski"
-set -x JAVA_HOME (/usr/libexec/java_home 2>/dev/null)
-set -x ANDROID_HOME $HOME/Library/Android/sdk/
+set -x JAVA_HOME /usr/lib/jvm/java-8-oracle
+set -x ANDROID_HOME $HOME/android-sdk-linux
+set -x PATH $PATH $ANDROID_HOME $ANDROID_HOME/bin
 set -x EDITOR micro
-set -x VISUAL_EDITOR sublime
-set -x MARKDOWN_EDITOR "Typora"
-set -x PROJECTS $HOME/Projects
-set -x ANDROID $PROJECTS/AndroidProjects
-set -x VAPE $ANDROID/VapeToolPro
