@@ -16,7 +16,8 @@ sudo apt upgrade -y
 sudo apt install -y git
 sudo apt install -y wget
 sudo apt install -y openssl
-echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections~
+echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+sudo apt-get install -y oracle-java8-installer
 sudo apt install -y unzip
 sudo apt install -y fish
 
