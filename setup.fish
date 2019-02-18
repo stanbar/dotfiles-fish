@@ -19,6 +19,7 @@ sudo apt install -y openssl
 echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections~
 sudo apt install -y unzip
 sudo apt install -y fish
+
 chsh -s /usr/bin/fish
 curl https://getmic.ro | bash
 sudo mv micro /usr/bin/micro
@@ -30,7 +31,7 @@ git clone https://github.com/stasbar/dotfiles-fish.git ~/dotfiles/fish
 touch ~/dotfiles/fish/secrets.fish
 echo 'source ~/dotfiles/fish/profile.fish' >> ~/.config/fish/config.fish
 ln -s ~/dotfiles/fish/functions ~/.config/fish/functions
-refresh
+
 
 # download and install android sdk
 wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
@@ -46,5 +47,8 @@ sdkmanager --licenses
 mkdir ~/.keys
 mkdir ~/projects 
 
-echo "You should update ~/.gradle/gradle.properties and ~/.keys with keystores"
-
+# install keybase
+curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
+sudo dpkg -i keybase_amd64.deb
+sudo apt-get install -f
+run_keybase
