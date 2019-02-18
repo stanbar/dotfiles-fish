@@ -9,8 +9,8 @@
 
 
 # add packages
-sudo apt-add-repository ppa:fish-shell/release-3
-sudo add-apt-repository ppa:webupd8team/java
+sudo apt-add-repository -y ppa:fish-shell/release-3
+sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt update
 sudo apt upgrade -y
 sudo apt install -y git
