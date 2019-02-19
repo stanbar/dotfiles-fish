@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 sudo passwd $USER
 git clone --branch build-server https://github.com/stasbar/dotfiles-fish.git ~/dotfiles/fish
